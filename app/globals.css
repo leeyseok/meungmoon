@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --surface: oklch(1 0 0);
+  --content: oklch(0.985 0 0);
+  --border: oklch(0.922 0 0);
+  --accent: oklab(0.588 -0.152137 -0.0556622 / 0.9);
+  --accent-hover: oklch(0.697 0.174 70.08);
+  --text: oklch(0.08 0 0);
+}
+
+.dark {
+  --surface: oklch(0.21 0.034 265.665);
+  --content: oklch(0.278 0.033 256.848);
+  --border: oklch(44.6% 0.03 256.802);
+  --accent: oklch(0.544 0.046 257.417);
+  --accent-hover: oklch(0.373 0.034 259.733);
+  --text: oklch(1 0 0);
+}
+
+@theme inline {
+  --color-surface: var(--surface);
+  --color-content: var(--content);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-text: var(--text);
+}
